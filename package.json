@@ -1,0 +1,30 @@
+{
+	"name": "spr-core",
+	"version": "0.1.0",
+	"description": "Stellar Payment Router backend service",
+	"main": "src/index.js",
+	"scripts": {
+		"dev": "node --watch src/index.js",
+		"start": "node src/index.js",
+		"lint": "eslint src/ --fix",
+		"test": "jest",
+		"test:coverage": "jest --coverage"
+	},
+	"dependencies": {
+		"express": "^4.18.2",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.3",
+		"@stellar/stellar-sdk": "^15.0.1",
+		"axios": "^1.6.2",
+		"redis": "^4.6.7",
+		"winston": "^3.8.2"
+	},
+	"devDependencies": {
+		"jest": "^29.7.0",
+		"eslint": "^8.50.0",
+		"nodemon": "^3.0.1"
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	}
+}
